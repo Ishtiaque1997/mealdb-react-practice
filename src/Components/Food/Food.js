@@ -1,3 +1,4 @@
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import './Food.css'
@@ -17,7 +18,7 @@ const Food = (props) => {
      <br />
      Region:{strArea}
     </Card.Text>
-    {/* <Button variant="primary">Go somewhere</Button> */}
+    <Button onClick={()=>props.handleOrder(props.food)} variant="primary"bg="secondary">Order food</Button>
   </Card.Body>
 </Card>
   
