@@ -12,11 +12,17 @@ const AllFoods = () => {
 
  
  return (
+  
   <div>
   
-   {
+   <div>
+    {
      foods.map(food=><Food food={food}></Food>)
    }
+   </div>
+   <div>
+    <h1>This is cart</h1>
+   </div>
   </div>
  );
 };

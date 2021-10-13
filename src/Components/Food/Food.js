@@ -8,12 +8,14 @@ const Food = (props) => {
   
     <div className='food-container'>
   <Card>
-  <Card.Header>Food name:{strMeal}</Card.Header>
+  
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
-    <img src={strMealThumb} alt="" />
+    <Card.Title>{strMeal}</Card.Title>
+    <img style={{height:'200px'}}src={strMealThumb} alt="" />
     <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
+     Category:{strCategory}
+     <br />
+     Region:{strArea}
     </Card.Text>
     {/* <Button variant="primary">Go somewhere</Button> */}
   </Card.Body>
